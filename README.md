@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Super Razan</h1>
+    <h1>Super </h1>
     <p>gfdjhagsdjskhfdhdsfkjdkjfjkd</p>
 </body>
 </html>
