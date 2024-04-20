@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Coding with Razan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        iframe {
+            width: 560px;
+            height: 315px;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Hello, I'm Razan!</h1>
+<p>I am currently learning coding and exploring the exciting world of web development.</p>
+
+<h2>Check out this helpful YouTube tutorial:</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+
+<h2>Guess the Number!</h2>
+
+<p>Guess a number between 1 and 10:</p>
+<input type="number" id="userGuess">
+<button onclick="checkGuess()">Check</button>
+
+<p id="result"></p>
+
+<script>
+    // Generate a random number between 1 and 10
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+    function checkGuess() {
+        const userGuess = parseInt(document.getElementById('userGuess').value);
+
+        if (userGuess === randomNumber) {
+            document.getElementById('result').textContent = 'Congratulations! You guessed it right!';
+        } else {
+            document.getElementById('result').textContent = 'Sorry, try again!';
+        }
+    }
+</script>
+
+</body>
+</html>
